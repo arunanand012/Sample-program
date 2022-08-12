@@ -44,5 +44,18 @@ email: <e-mail>
     And params {postId:1,id:2}
     When method Get
     Then status 200
+    And print response
+    
+    Scenario:
+          Given url 'https://reqres.in/api/users?page=1'
+          And def data_id = $..id
+          And print data_id
+          And assert data_id[1] == 2
+          And def first_name = $..first_name
+          And print first_name
+          And assert first_name[1] == "Janet"
+          And def avatar = $..avatar
+          And print avatar
+          And assert avatar[1] == "https://reqres.in/img/faces/2-image.jpg"
 
 
