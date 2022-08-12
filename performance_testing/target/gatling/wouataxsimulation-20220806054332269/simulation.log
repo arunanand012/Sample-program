@@ -1,0 +1,79 @@
+RUN	wouataxservice.WouaTaxSimulation	wouataxsimulation	1659764612269	 	3.0.2
+USER	Trigger Signup API with valid parameter	1	START	1659764612484	1659764612484
+USER	Trigger Signup API with valid parameter	2	START	1659764632497	1659764632497
+REQUEST	1		POST /auth/register	1659764613835	1659764634905	KO	classpath:wouataxservice/woua_tax_bvt.feature:21 method post
+USER	Trigger Signup API with valid parameter	3	START	1659764652483	1659764652483
+REQUEST	2		POST /auth/register	1659764632592	1659764653654	KO	classpath:wouataxservice/woua_tax_bvt.feature:21 method post
+REQUEST	1		POST /auth/login	1659764634936	1659764655989	KO	classpath:wouataxservice/woua_tax_bvt.feature:30 method post
+REQUEST	3		POST /auth/register	1659764652529	1659764673570	KO	classpath:wouataxservice/woua_tax_bvt.feature:21 method post
+REQUEST	2		POST /auth/login	1659764653669	1659764674727	KO	classpath:wouataxservice/woua_tax_bvt.feature:30 method post
+REQUEST	1		POST /tax/service/order/new	1659764656005	1659764677058	KO	classpath:wouataxservice/woua_tax_bvt.feature:39 method post
+REQUEST	3		POST /auth/login	1659764673586	1659764694609	KO	classpath:wouataxservice/woua_tax_bvt.feature:30 method post
+REQUEST	2		POST /tax/service/order/new	1659764674743	1659764695765	KO	classpath:wouataxservice/woua_tax_bvt.feature:39 method post
+REQUEST	1		PUT /auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa	1659764677120	1659764698156	KO	classpath:wouataxservice/woua_tax_bvt.feature:48 method put
+REQUEST	3		POST /tax/service/order/new	1659764694624	1659764715650	KO	classpath:wouataxservice/woua_tax_bvt.feature:39 method post
+REQUEST	2		PUT /auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa	1659764695780	1659764716806	KO	classpath:wouataxservice/woua_tax_bvt.feature:48 method put
+REQUEST	1		GET /tax/service/order/list	1659764698171	1659764719228	KO	classpath:wouataxservice/woua_tax_bvt.feature:56 method get
+REQUEST	3		PUT /auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa	1659764715666	1659764736697	KO	classpath:wouataxservice/woua_tax_bvt.feature:48 method put
+REQUEST	2		GET /tax/service/order/list	1659764716822	1659764737869	KO	classpath:wouataxservice/woua_tax_bvt.feature:56 method get
+REQUEST	1		GET /auth/viewuser	1659764719244	1659764740275	KO	classpath:wouataxservice/woua_tax_bvt.feature:64 method get
+REQUEST	3		GET /tax/service/order/list	1659764736713	1659764757748	KO	classpath:wouataxservice/woua_tax_bvt.feature:56 method get
+REQUEST	2		GET /auth/viewuser	1659764737885	1659764758905	KO	classpath:wouataxservice/woua_tax_bvt.feature:64 method get
+REQUEST	1		PUT /tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764740291	1659764761329	KO	classpath:wouataxservice/woua_tax_bvt.feature:73 method put
+REQUEST	3		GET /auth/viewuser	1659764757748	1659764778813	KO	classpath:wouataxservice/woua_tax_bvt.feature:64 method get
+REQUEST	2		PUT /tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764758920	1659764779969	KO	classpath:wouataxservice/woua_tax_bvt.feature:73 method put
+REQUEST	1		POST /tax/service/incomplete/users	1659764761344	1659764782407	KO	classpath:wouataxservice/woua_tax_bvt.feature:82 method post
+REQUEST	3		PUT /tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764778829	1659764799907	KO	classpath:wouataxservice/woua_tax_bvt.feature:73 method put
+REQUEST	2		POST /tax/service/incomplete/users	1659764779985	1659764801031	KO	classpath:wouataxservice/woua_tax_bvt.feature:82 method post
+REQUEST	1		POST /tax/service/ordermodify/new	1659764782422	1659764803469	KO	classpath:wouataxservice/woua_tax_bvt.feature:91 method post
+REQUEST	3		POST /tax/service/incomplete/users	1659764799922	1659764820970	KO	classpath:wouataxservice/woua_tax_bvt.feature:82 method post
+REQUEST	2		POST /tax/service/ordermodify/new	1659764801031	1659764822095	KO	classpath:wouataxservice/woua_tax_bvt.feature:91 method post
+REQUEST	1		POST /tax/service/order/upload	1659764803484	1659764824531	KO	classpath:wouataxservice/woua_tax_bvt.feature:100 method post
+REQUEST	3		POST /tax/service/ordermodify/new	1659764820986	1659764842029	KO	classpath:wouataxservice/woua_tax_bvt.feature:91 method post
+REQUEST	2		POST /tax/service/order/upload	1659764822111	1659764843142	KO	classpath:wouataxservice/woua_tax_bvt.feature:100 method post
+REQUEST	1		GET /tax/service/ordermodify/list	1659764824547	1659764845587	KO	classpath:wouataxservice/woua_tax_bvt.feature:108 method get
+REQUEST	3		POST /tax/service/order/upload	1659764842044	1659764863077	KO	classpath:wouataxservice/woua_tax_bvt.feature:100 method post
+REQUEST	2		GET /tax/service/ordermodify/list	1659764843158	1659764864202	KO	classpath:wouataxservice/woua_tax_bvt.feature:108 method get
+REQUEST	1		PUT /tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764845587	1659764866628	KO	classpath:wouataxservice/woua_tax_bvt.feature:117 method put
+REQUEST	3		GET /tax/service/ordermodify/list	1659764863077	1659764884114	KO	classpath:wouataxservice/woua_tax_bvt.feature:108 method get
+REQUEST	2		PUT /tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764864202	1659764885255	KO	classpath:wouataxservice/woua_tax_bvt.feature:117 method put
+REQUEST	1		POST /tax/service/orderfiling/new	1659764866643	1659764887708	KO	classpath:wouataxservice/woua_tax_bvt.feature:126 method post
+REQUEST	3		PUT /tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764884114	1659764905145	KO	classpath:wouataxservice/woua_tax_bvt.feature:117 method put
+REQUEST	2		POST /tax/service/orderfiling/new	1659764885255	1659764906285	KO	classpath:wouataxservice/woua_tax_bvt.feature:126 method post
+REQUEST	1		GET /tax/service/orderfiling/list	1659764887723	1659764908785	KO	classpath:wouataxservice/woua_tax_bvt.feature:134 method get
+REQUEST	3		POST /tax/service/orderfiling/new	1659764905145	1659764926177	KO	classpath:wouataxservice/woua_tax_bvt.feature:126 method post
+REQUEST	2		GET /tax/service/orderfiling/list	1659764906285	1659764927333	KO	classpath:wouataxservice/woua_tax_bvt.feature:134 method get
+REQUEST	1		PUT /tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764908785	1659764929833	KO	classpath:wouataxservice/woua_tax_bvt.feature:143 method put
+REQUEST	3		GET /tax/service/orderfiling/list	1659764926177	1659764947227	KO	classpath:wouataxservice/woua_tax_bvt.feature:134 method get
+REQUEST	2		PUT /tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764927349	1659764948399	KO	classpath:wouataxservice/woua_tax_bvt.feature:143 method put
+REQUEST	1		POST /tax/service/orderfiling/upload	1659764929849	1659764950898	KO	classpath:wouataxservice/woua_tax_bvt.feature:152 method post
+REQUEST	3		PUT /tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659764947227	1659764968290	KO	classpath:wouataxservice/woua_tax_bvt.feature:143 method put
+REQUEST	2		POST /tax/service/orderfiling/upload	1659764948399	1659764969432	KO	classpath:wouataxservice/woua_tax_bvt.feature:152 method post
+REQUEST	1		GET /tax/service/order/listall	1659764950898	1659764971947	KO	classpath:wouataxservice/woua_tax_bvt.feature:160 method get
+REQUEST	3		POST /tax/service/orderfiling/upload	1659764968290	1659764989337	KO	classpath:wouataxservice/woua_tax_bvt.feature:152 method post
+REQUEST	2		GET /tax/service/order/listall	1659764969447	1659764990509	KO	classpath:wouataxservice/woua_tax_bvt.feature:160 method get
+REQUEST	1		GET /tax/service/ordermodify/listall	1659764971963	1659764993009	KO	classpath:wouataxservice/woua_tax_bvt.feature:168 method get
+REQUEST	3		GET /tax/service/order/listall	1659764989337	1659765010383	KO	classpath:wouataxservice/woua_tax_bvt.feature:160 method get
+REQUEST	2		GET /tax/service/ordermodify/listall	1659764990509	1659765011539	KO	classpath:wouataxservice/woua_tax_bvt.feature:168 method get
+REQUEST	1		GET /tax/service/orderfiling/listall	1659764993024	1659765014086	KO	classpath:wouataxservice/woua_tax_bvt.feature:176 method get
+REQUEST	3		GET /tax/service/ordermodify/listall	1659765010383	1659765031434	KO	classpath:wouataxservice/woua_tax_bvt.feature:168 method get
+REQUEST	2		GET /tax/service/orderfiling/listall	1659765011539	1659765032590	KO	classpath:wouataxservice/woua_tax_bvt.feature:176 method get
+REQUEST	1		GET /tax/service/incomplete/userslist	1659765014101	1659765035136	KO	classpath:wouataxservice/woua_tax_bvt.feature:184 method get
+REQUEST	3		GET /tax/service/orderfiling/listall	1659765031449	1659765052511	KO	classpath:wouataxservice/woua_tax_bvt.feature:176 method get
+REQUEST	2		GET /tax/service/incomplete/userslist	1659765032590	1659765053605	KO	classpath:wouataxservice/woua_tax_bvt.feature:184 method get
+REQUEST	1		GET /tax/service/order/completed/COMPLETED	1659765035136	1659765056183	KO	classpath:wouataxservice/woua_tax_bvt.feature:192 method get
+REQUEST	3		GET /tax/service/incomplete/userslist	1659765052511	1659765073566	KO	classpath:wouataxservice/woua_tax_bvt.feature:184 method get
+REQUEST	2		GET /tax/service/order/completed/COMPLETED	1659765053605	1659765074645	KO	classpath:wouataxservice/woua_tax_bvt.feature:192 method get
+REQUEST	1		PUT /tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765056198	1659765077223	KO	classpath:wouataxservice/woua_tax_bvt.feature:201 method put
+REQUEST	3		GET /tax/service/order/completed/COMPLETED	1659765073566	1659765094623	KO	classpath:wouataxservice/woua_tax_bvt.feature:192 method get
+REQUEST	2		PUT /tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765074660	1659765095732	KO	classpath:wouataxservice/woua_tax_bvt.feature:201 method put
+REQUEST	1		PUT /tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765077238	1659765098279	KO	classpath:wouataxservice/woua_tax_bvt.feature:210 method put
+REQUEST	3		PUT /tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765094623	1659765115683	KO	classpath:wouataxservice/woua_tax_bvt.feature:201 method put
+REQUEST	2		PUT /tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765095732	1659765116766	KO	classpath:wouataxservice/woua_tax_bvt.feature:210 method put
+REQUEST	1		PUT /tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765098294	1659765119319	KO	classpath:wouataxservice/woua_tax_bvt.feature:220 method put
+USER	Trigger Signup API with valid parameter	1	END	1659764612484	1659765119320
+REQUEST	3		PUT /tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765115683	1659765136728	KO	classpath:wouataxservice/woua_tax_bvt.feature:210 method put
+REQUEST	2		PUT /tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765116766	1659765137790	KO	classpath:wouataxservice/woua_tax_bvt.feature:220 method put
+USER	Trigger Signup API with valid parameter	2	END	1659764632497	1659765137790
+REQUEST	3		PUT /tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be	1659765136728	1659765157805	KO	classpath:wouataxservice/woua_tax_bvt.feature:220 method put
+USER	Trigger Signup API with valid parameter	3	END	1659764652483	1659765157804

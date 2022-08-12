@@ -1,0 +1,178 @@
+{
+  "sign_up_response": {
+    "status": "SUCCESS",
+    "message": "Registration successful"
+  },
+  "login_response": {
+    "status": "SUCCESS",
+    "message": "Login successful"
+  },
+  "service_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "update_password_response": {
+    "status": "SUCCESS",
+    "message": "updated successfully"
+  },
+  "get_service_response" : {
+  "status": "SUCCESS",
+  "message": "Task successful"
+  },
+  "get_user_response" : {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "update_payment_status_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "service_modification_response":{
+  "status": "SUCCESS",
+  "message": "Task successful"
+  },
+  "incomplete_response": {
+    "status": "SUCCESS",
+    "message": "register successfully"
+  },
+  "upload_media_file_response": {
+    "status": "SUCCESS",
+    "message": "File uploaded successfully"
+  },
+  "get_modification_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "tax_filling_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "filling_media_upload_response": {
+    "status": "SUCCESS",
+    "message": "File uploaded successfully"
+  },
+  "filling_payment_status_update_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "filling_get_modification_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful"
+  },
+  "get_all_service_register_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "get_all_service_modification_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "get_all_service_filling_request_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "get_all_incomplete_user_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "get_all_completed_history_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "update_register_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "update_modification_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "update_filling_response": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "response_401": {
+    "status": "UNAUTHORIZED",
+    "message": "Authorization Failed"
+  },
+  "response_400": {
+    "status": "INVALID",
+    "message": "Invalid  Request"
+  },
+  "register_request_status_update": {
+    "status": "SUCCESS",
+    "message": "Task successful",
+  },
+  "signup_register_email_exist": {
+    "status": "FAILED",
+    "message": "Email-Id already exists"
+  },
+  "signup_register_password_less_digit": {
+    "status": "FAILED",
+    "message": "Password should be of min 8 and max 50 character in length"
+  },
+  "signup_register_password_high_length": {
+    "status": "FAILED",
+    "message": "Password should be of min 8 and max 50 character in length"
+  },
+  "empty_username_password" : {
+    "status": "FAILED",
+    "message": "Username or password should not be blank"
+  },
+  "applicant_empty" : {
+    "status": "FAILED",
+    "message": "Applicant name should not be blank"
+  },
+  "email_empty" : {
+    "status": "FAILED",
+    "message": "emailId should not be blank"
+  },
+  "modification_email_empty" : {
+    "status": "FAILED",
+    "message": "Email-Id should not be blank"
+  },
+  "pincode_empty" : {
+    "status": "FAILED",
+    "message": "pincode should not be blank"
+  },
+  "mobile_number_empty" : {
+    "status": "FAILED",
+    "message": "Mobile should not be blank"
+  },
+  "state_empty": {
+    "status": "FAILED",
+    "message": "state should not be blank"
+  },
+  "password_empty" : {
+    "status": "FAILED",
+    "message": "password should not be blank"
+  },
+  "payment_status_empty" : {
+    "status": "FAILED",
+    "message": "PaymentStatus should not be blank"
+  },
+  "payment_mode_empty" : {
+    "status": "FAILED",
+    "message": "PaymentMode should not be blank "
+  },
+  "invalid_payment_mode" : {
+    "status": "FAILED",
+    "message": "Payment mode field must be CC,NB,PPI and DC data's only"
+  },
+  "invalid_payment_status" : {
+    "status": "FAILED",
+    "message": "Payment status field must be paid and unpaid data's only"
+  },
+  "already_paid" : {
+    "status": "FAILED",
+    "message": "Already paid"
+  },
+  "modification_empty" : {
+    "status": "FAILED",
+    "message": "Modification details should not be blank"
+  },
+  "modification_request_status_update": {
+  "status": "SUCCESS",
+  "message": "Task successful"
+  }
+}

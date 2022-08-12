@@ -1,0 +1,72 @@
+{
+  "request_id": "",
+  "user_id": "",
+"signup":{
+  "emailId": "testqa1667@gmail.com",
+  "password": "test132@123",
+  "userName": "vikas",
+  "mobile": "9876565422",
+  "userType":"User"
+},
+  "login": {
+    "emailId": "testqa12@gmail.com",
+    "password": "test132@123",
+    "userType":"User"
+  },
+  "register_request": {
+    "applicantFullName": "WouaSoftwareLabs",
+    "emailAddress": "wouatest9@gmail.com",
+    "mobileNumber": "9876565423",
+    "state": "Tamilnadu",
+    "pincode" : "613000"
+  },
+  "update_password":{
+    "emailId": "testqa18@gmail.com",
+    "password": "test18@123"
+  },
+  "update_payment_status": {
+    "paymentStatus" :"PAID",
+    "paymentMode" : "CC"
+  },
+  "incomplete_user": {
+    "applicantFullName": "WouaLabs",
+    "emailAddress": "wouatest1@gmail.com",
+    "mobileNumber": "9876565423",
+    "state": "Tamilnadu",
+    "pincode" : "613000",
+    "userType" : "Registration"
+  },
+  "modification_request": {
+    "applicantFullName": "vijaykumar",
+    "emailAddress": "vjkumar@gmail.com",
+    "mobileNumber": "9876565423",
+    "modification" : "change address",
+    "state": "Tamilnadu",
+    "pincode" : "613007"
+  },
+  "update_media_file": {
+    "media" : "word.doc"
+  },
+  "filling_request": {
+    "applicantFullName": "vijayaragavesh",
+    "emailAddress": "vijay@gmail.com",
+    "mobileNumber": "9876565423",
+    "state": "Tamilnadu",
+    "pincode": "567 009"
+  },
+  "register_request_status_update": {
+    "adminStatus": "START",
+    "customerStatus": "PENDING"
+  }
+,
+  "modification_request_status_update": {
+    "adminStatus": "START",
+    "customerStatus": "PENDING"
+  }
+,
+  "filling_request_status_update": {
+    "adminStatus": "START",
+    "customerStatus": "PENDING"
+  }
+
+}

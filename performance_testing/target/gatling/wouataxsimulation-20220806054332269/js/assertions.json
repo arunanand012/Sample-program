@@ -1,0 +1,10 @@
+{
+  "simulation": "wouataxservice.WouaTaxSimulation",
+  "simulationId": "wouataxsimulation",
+  "start": 1659764612269,
+  "description": "",
+  "scenarios": ["Trigger Signup API with valid parameter"],
+  "assertions": [
+
+  ]
+}

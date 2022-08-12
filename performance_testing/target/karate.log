@@ -1,0 +1,1614 @@
+11:13:26.466 [main] INFO  io.gatling.compiler.ZincCompiler$ - Compiling 1 Scala source to C:\Users\91934\Downloads\performance_testing\target\test-classes ...
+11:13:29.504 [main] INFO  io.gatling.compiler.ZincCompiler$ - Done compiling.
+11:13:31.054 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+11:13:31.617 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+11:13:32.304 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+11:13:32.304 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+11:13:32.320 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+11:13:32.320 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+11:13:33.507 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:13:33.617 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:13:33.835 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/register
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 117
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "karthi177@gmail.com",
+  "password": "test132@123",
+  "userName": "vikas",
+  "mobile": "9876565422",
+  "userType": "User"
+}
+
+
+11:13:52.561 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:13:52.577 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:13:52.592 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/register
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 117
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "karthi177@gmail.com",
+  "password": "test132@123",
+  "userName": "vikas",
+  "mobile": "9876565422",
+  "userType": "User"
+}
+
+
+11:13:54.905 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21070 milliseconds for URL: http://192.168.1.16:8080/auth/register
+11:13:54.905 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:13:54.905 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:13:54.920 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:13:54.936 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 75
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa12@gmail.com",
+  "password": "test132@123",
+  "userType": "User"
+}
+
+
+11:14:11.496 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.core.controller.inject.Injector - StoppedInjecting
+11:14:12.513 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:14:12.529 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:12.529 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/register
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 117
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "karthi177@gmail.com",
+  "password": "test132@123",
+  "userName": "vikas",
+  "mobile": "9876565422",
+  "userType": "User"
+}
+
+
+11:14:13.654 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21062 milliseconds for URL: http://192.168.1.16:8080/auth/register
+11:14:13.654 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:13.654 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:14:13.669 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:13.669 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 75
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa12@gmail.com",
+  "password": "test132@123",
+  "userType": "User"
+}
+
+
+11:14:15.989 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21053 milliseconds for URL: http://192.168.1.16:8080/auth/login
+11:14:15.989 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:15.989 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:14:16.005 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:16.005 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 144
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaSoftwareLabs",
+  "emailAddress": "wouatest9@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000"
+}
+
+
+11:14:33.570 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21041 milliseconds for URL: http://192.168.1.16:8080/auth/register
+11:14:33.570 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:33.570 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:14:33.586 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:33.586 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/auth/login
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 75
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa12@gmail.com",
+  "password": "test132@123",
+  "userType": "User"
+}
+
+
+11:14:34.727 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21058 milliseconds for URL: http://192.168.1.16:8080/auth/login
+11:14:34.727 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:34.727 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:14:34.743 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:34.743 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 144
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaSoftwareLabs",
+  "emailAddress": "wouatest9@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000"
+}
+
+
+11:14:37.058 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21053 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/new
+11:14:37.058 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:37.058 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:14:37.074 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:37.120 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa18@gmail.com",
+  "password": "test18@123"
+}
+
+
+11:14:54.609 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21023 milliseconds for URL: http://192.168.1.16:8080/auth/login
+11:14:54.609 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:54.609 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:14:54.624 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:54.624 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 144
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaSoftwareLabs",
+  "emailAddress": "wouatest9@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000"
+}
+
+
+11:14:55.765 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21022 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/new
+11:14:55.765 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:55.765 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:14:55.780 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:55.780 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa18@gmail.com",
+  "password": "test18@123"
+}
+
+
+11:14:58.156 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21036 milliseconds for URL: http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+11:14:58.156 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:14:58.156 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:14:58.171 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:14:58.171 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:15.650 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21026 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/new
+11:15:15.650 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:15.650 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:15:15.666 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:15.666 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "emailId": "testqa18@gmail.com",
+  "password": "test18@123"
+}
+
+
+11:15:16.806 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21026 milliseconds for URL: http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+11:15:16.806 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:16.806 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:15:16.822 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:16.822 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:19.228 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21057 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/list
+11:15:19.228 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:19.228 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:15:19.244 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:19.244 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/auth/viewuser
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:36.697 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21031 milliseconds for URL: http://192.168.1.16:8080/auth/updatepassword/ab68222d-b367-41d5-b2b6-66c2f2e94caa
+11:15:36.697 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:36.697 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:15:36.713 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:36.713 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:37.869 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21047 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/list
+11:15:37.869 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:37.869 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:15:37.885 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:37.885 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/auth/viewuser
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:40.275 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21031 milliseconds for URL: http://192.168.1.16:8080/auth/viewuser
+11:15:40.275 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:40.275 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:15:40.275 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:40.291 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:15:57.748 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21035 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/list
+11:15:57.748 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:57.748 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:15:57.748 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:57.748 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/auth/viewuser
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:15:58.905 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21020 milliseconds for URL: http://192.168.1.16:8080/auth/viewuser
+11:15:58.905 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:15:58.905 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:15:58.905 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:15:58.920 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:16:01.329 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21038 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:16:01.329 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:01.329 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:16:01.329 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:01.344 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/incomplete/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 162
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaLabs",
+  "emailAddress": "wouatest1@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000",
+  "userType": "Registration"
+}
+
+
+11:16:18.813 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21065 milliseconds for URL: http://192.168.1.16:8080/auth/viewuser
+11:16:18.813 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:18.829 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:16:18.829 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:18.829 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:16:19.969 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21049 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:16:19.969 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:19.969 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:16:19.969 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:19.985 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/incomplete/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 162
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaLabs",
+  "emailAddress": "wouatest1@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000",
+  "userType": "Registration"
+}
+
+
+11:16:22.407 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21063 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/users
+11:16:22.407 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:22.407 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:16:22.407 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:22.422 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/ordermodify/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijaykumar",
+  "emailAddress": "vjkumar@gmail.com",
+  "mobileNumber": "9876565423",
+  "modification": "change address",
+  "state": "Tamilnadu",
+  "pincode": "613007"
+}
+
+
+11:16:39.907 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21078 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/updatestatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:16:39.907 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:39.907 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:16:39.907 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:39.922 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/incomplete/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 162
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "WouaLabs",
+  "emailAddress": "wouatest1@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "613000",
+  "userType": "Registration"
+}
+
+
+11:16:41.031 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21046 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/users
+11:16:41.031 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:41.031 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:16:41.031 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:41.031 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/ordermodify/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijaykumar",
+  "emailAddress": "vjkumar@gmail.com",
+  "mobileNumber": "9876565423",
+  "modification": "change address",
+  "state": "Tamilnadu",
+  "pincode": "613007"
+}
+
+
+11:16:43.469 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21047 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/new
+11:16:43.469 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:16:43.469 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:16:43.469 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:16:43.484 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:17:00.970 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21048 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/users
+11:17:00.970 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:00.970 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:17:00.970 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:00.986 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/ordermodify/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijaykumar",
+  "emailAddress": "vjkumar@gmail.com",
+  "mobileNumber": "9876565423",
+  "modification": "change address",
+  "state": "Tamilnadu",
+  "pincode": "613007"
+}
+
+
+11:17:02.095 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21064 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/new
+11:17:02.095 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:02.095 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:17:02.111 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:02.111 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:17:04.531 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21047 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/upload
+11:17:04.531 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:04.531 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:17:04.531 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:04.547 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:17:22.029 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21043 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/new
+11:17:22.029 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:22.029 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:17:22.029 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:22.044 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/order/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:17:23.142 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21031 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/upload
+11:17:23.142 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:23.148 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:17:23.158 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:23.158 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:17:25.587 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21040 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/list
+11:17:25.587 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:25.587 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:17:25.587 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:25.587 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:17:43.077 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21033 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/upload
+11:17:43.077 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:43.077 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:17:43.077 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:43.077 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:17:44.202 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21044 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/list
+11:17:44.202 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:44.202 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:17:44.202 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:44.202 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:17:46.628 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21041 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:17:46.628 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:17:46.628 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:17:46.628 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:17:46.643 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 139
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijayaragavesh",
+  "emailAddress": "vijay@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "567 009"
+}
+
+
+11:18:04.114 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21037 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/list
+11:18:04.114 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:04.114 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:18:04.114 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:04.114 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:18:05.255 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21053 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:18:05.255 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:05.255 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:18:05.255 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:05.255 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 139
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijayaragavesh",
+  "emailAddress": "vijay@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "567 009"
+}
+
+
+11:18:07.708 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21065 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/new
+11:18:07.708 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:07.708 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:18:07.708 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:07.708 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:18:25.145 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21031 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:18:25.145 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:25.145 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:18:25.145 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:25.145 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/new
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 139
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "applicantFullName": "vijayaragavesh",
+  "emailAddress": "vijay@gmail.com",
+  "mobileNumber": "9876565423",
+  "state": "Tamilnadu",
+  "pincode": "567 009"
+}
+
+
+11:18:26.285 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21030 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/new
+11:18:26.285 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:26.285 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:18:26.285 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:26.285 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:18:28.785 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21062 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/list
+11:18:28.785 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:28.785 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:18:28.785 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:28.785 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:18:46.177 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21032 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/new
+11:18:46.177 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:46.177 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:18:46.177 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:46.177 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/list
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:18:47.333 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21048 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/list
+11:18:47.333 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:47.333 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:18:47.333 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:47.333 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:18:49.833 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21048 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:18:49.833 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:18:49.833 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:18:49.833 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:18:49.849 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:19:07.227 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21050 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/list
+11:19:07.227 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:07.227 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:19:07.227 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:07.227 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "paymentStatus": "PAID",
+  "paymentMode": "CC"
+}
+
+
+11:19:08.399 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21050 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:19:08.399 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:08.399 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:19:08.399 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:08.399 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:19:10.898 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21049 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/upload
+11:19:10.898 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:10.898 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:19:10.898 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:10.898 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:19:28.290 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21063 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updatepaymentstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:19:28.290 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:28.290 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:19:28.290 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:28.290 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.1.16:8080/tax/service/orderfiling/upload
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+media=word.doc
+
+11:19:29.432 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21033 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/upload
+11:19:29.432 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:29.432 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:19:29.432 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:29.447 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:19:31.947 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21049 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/listall
+11:19:31.947 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:31.947 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:19:31.963 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:31.963 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:19:49.337 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21047 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/upload
+11:19:49.337 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:49.337 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:19:49.337 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:49.337 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:19:50.509 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21062 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/listall
+11:19:50.509 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:50.509 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:19:50.509 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:50.509 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:19:53.009 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21046 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/listall
+11:19:53.009 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:19:53.009 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:19:53.009 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:19:53.024 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:10.383 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21046 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/listall
+11:20:10.383 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:10.383 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:20:10.383 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:10.383 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/ordermodify/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:11.539 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21030 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/listall
+11:20:11.539 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:11.539 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:20:11.539 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:11.539 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:14.086 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21062 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/listall
+11:20:14.086 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:14.086 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:20:14.086 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:14.101 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/incomplete/userslist
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:31.434 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21051 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/listall
+11:20:31.434 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:31.434 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:20:31.434 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:31.449 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/orderfiling/listall
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:32.590 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21051 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/listall
+11:20:32.590 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:32.590 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:20:32.590 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:32.590 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/incomplete/userslist
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:35.136 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21035 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/userslist
+11:20:35.136 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:35.136 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:20:35.136 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:35.136 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:52.511 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21062 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/listall
+11:20:52.511 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:52.511 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:20:52.511 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:52.511 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/incomplete/userslist
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:53.605 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21015 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/userslist
+11:20:53.605 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:53.605 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:20:53.605 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:53.605 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:20:56.183 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21047 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+11:20:56.183 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:20:56.183 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:20:56.183 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:20:56.198 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:13.566 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21055 milliseconds for URL: http://192.168.1.16:8080/tax/service/incomplete/userslist
+11:21:13.566 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:13.566 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:21:13.566 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:13.566 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:21:14.645 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21040 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+11:21:14.645 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:14.645 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:21:14.645 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:14.660 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:17.223 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21025 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:17.223 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:17.223 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:21:17.223 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:17.223 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:34.623 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21057 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/completed/COMPLETED
+11:21:34.623 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:34.623 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:21:34.623 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:34.623 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:35.732 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21072 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:35.732 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:35.732 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:21:35.732 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:35.732 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:38.279 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21041 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:38.279 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:38.279 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was:  
+11:21:38.279 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:38.294 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:55.683 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21060 milliseconds for URL: http://192.168.1.16:8080/tax/service/order/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:55.683 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:55.683 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:21:55.683 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:55.683 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:56.766 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21034 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:56.766 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:21:56.766 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - karate.env system property was:  
+11:21:56.766 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:21:56.766 [GatlingSystem-akka.actor.default-dispatcher-2] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:21:59.319 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21025 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:21:59.319 [GatlingSystem-akka.actor.default-dispatcher-5] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:22:16.728 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21045 milliseconds for URL: http://192.168.1.16:8080/tax/service/ordermodify/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:22:16.728 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:22:16.728 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was:  
+11:22:16.728 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - [print] headers................. {
+  "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU",
+  "Content-Type": "application/json"
+}
+
+11:22:16.728 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > PUT http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU
+1 > Connection: Keep-Alive
+1 > Content-Length: 50
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 192.168.1.16:8080
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{
+  "adminStatus": "START",
+  "customerStatus": "PENDING"
+}
+
+
+11:22:17.790 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21024 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:22:17.790 [GatlingSystem-akka.actor.default-dispatcher-2] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:22:37.805 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect, http call failed after 21077 milliseconds for URL: http://192.168.1.16:8080/tax/service/orderfiling/updateapplicationstatus/e49e8668-fd4d-497d-bed9-6b102cd186be
+11:22:37.805 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.16:8080 [/192.168.1.16] failed: Connection timed out: connect
+11:22:37.805 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All users of scenario Trigger Signup API with valid parameter are stopped
+11:22:37.805 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Stopping
+11:22:37.805 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+11:22:37.852 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.gatling.core.controller.Controller - StatsEngineStopped
+11:22:37.961 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected ArrayBuffer(C:\Users\91934\Downloads\performance_testing\target\gatling\wouataxsimulation-20220806054332269\simulation.log) from wouataxsimulation-20220806054332269
+11:22:37.993 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+11:22:38.008 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 79 lines
+11:22:38.040 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+11:22:38.102 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 79 lines

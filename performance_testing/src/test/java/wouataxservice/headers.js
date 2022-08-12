@@ -1,0 +1,1 @@
+function(){ return { Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vbG9jYWxob3N0LmNvbSIsImlzcyI6IldvdWFMYWJzLUpXVC1Jc3N1ZXIiLCJ1c2VySWQiOiIyMWJmODc3Ni0wODkwLTQ5OWUtYTFkMC00M2QyYjQzODRkZWEifQ.VjIDwNiyC8bCqQ69z8ZKy7sFPso3jKbM_sOsZvKpUJU', Content_Type: 'application/json' } }
