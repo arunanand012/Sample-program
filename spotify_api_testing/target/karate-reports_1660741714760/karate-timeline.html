@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/users[1:3]","start":1660741530079,"end":1660741531468,"title":"src\/test\/java\/examples\/users\/users[1:3] 18:35:30.079-18:35:31.468"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/users[2:12]","start":1660741531485,"end":1660741531906,"title":"src\/test\/java\/examples\/users\/users[2:12] 18:35:31.485-18:35:31.906 Get Several Browse Categories"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/users[3:20]","start":1660741531907,"end":1660741532306,"title":"src\/test\/java\/examples\/users\/users[3:20] 18:35:31.907-18:35:32.306 Get Single Browse Category"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/users[4:29]","start":1660741532313,"end":1660741532734,"title":"src\/test\/java\/examples\/users\/users[4:29] 18:35:32.313-18:35:32.734 Get Featured Playlists"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/users\/users[5:38]","start":1660741532735,"end":1660741533296,"title":"src\/test\/java\/examples\/users\/users[5:38] 18:35:32.735-18:35:33.296 Get Featured Playlists"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/users\/users[6:47]","start":1660741533297,"end":1660741533734,"title":"src\/test\/java\/examples\/users\/users[6:47] 18:35:33.297-18:35:33.734 Get Several artists","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/users\/users[7:56]","start":1660741533750,"end":1660741534156,"title":"src\/test\/java\/examples\/users\/users[7:56] 18:35:33.750-18:35:34.156 Get the track"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/users\/users[8:66]","start":1660741534157,"end":1660741534624,"title":"src\/test\/java\/examples\/users\/users[8:66] 18:35:34.157-18:35:34.624 Get add the track to playlist","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/examples\/users\/users[9:76]","start":1660741534625,"end":1660741534953,"title":"src\/test\/java\/examples\/users\/users[9:76] 18:35:34.625-18:35:34.953 Get Current User\u2019s Profile"},{"id":10,"group":1,"content":"src\/test\/java\/examples\/users\/users[10:84]","start":1660741534954,"end":1660741535281,"title":"src\/test\/java\/examples\/users\/users[10:84] 18:35:34.954-18:35:35.281 Get Current User\u2019s Profile"},{"id":11,"group":1,"content":"src\/test\/java\/examples\/users\/users[11:92]","start":1660741535282,"end":1660741536218,"title":"src\/test\/java\/examples\/users\/users[11:92] 18:35:35.282-18:35:36.218 Get Track\u2019s Audio Analysis","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/examples\/users\/users[12:101]","start":1660741536219,"end":1660741536812,"title":"src\/test\/java\/examples\/users\/users[12:101] 18:35:36.219-18:35:36.812 Get Track\u2019s Audio Analysis"},{"id":13,"group":1,"content":"src\/test\/java\/examples\/users\/users[13:110]","start":1660741536813,"end":1660741537218,"title":"src\/test\/java\/examples\/users\/users[13:110] 18:35:36.813-18:35:37.218 Get Available Markets"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

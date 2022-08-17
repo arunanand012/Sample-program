@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/users[1:3]","start":1660741715385,"end":1660741716790,"title":"src\/test\/java\/examples\/users\/users[1:3] 18:38:35.385-18:38:36.790"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/users[2:12]","start":1660741716791,"end":1660741717259,"title":"src\/test\/java\/examples\/users\/users[2:12] 18:38:36.791-18:38:37.259 Get Several Browse Categories"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/users[3:20]","start":1660741717260,"end":1660741717650,"title":"src\/test\/java\/examples\/users\/users[3:20] 18:38:37.260-18:38:37.650 Get Single Browse Category"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/users[4:29]","start":1660741717666,"end":1660741718167,"title":"src\/test\/java\/examples\/users\/users[4:29] 18:38:37.666-18:38:38.167 Get Featured Playlists"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/users\/users[5:38]","start":1660741718183,"end":1660741718807,"title":"src\/test\/java\/examples\/users\/users[5:38] 18:38:38.183-18:38:38.807 Get Featured Playlists"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/users\/users[6:47]","start":1660741718808,"end":1660741719276,"title":"src\/test\/java\/examples\/users\/users[6:47] 18:38:38.808-18:38:39.276 Get Several artists"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/users\/users[7:57]","start":1660741719293,"end":1660741719698,"title":"src\/test\/java\/examples\/users\/users[7:57] 18:38:39.293-18:38:39.698 Get the track"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/users\/users[8:67]","start":1660741719699,"end":1660741720104,"title":"src\/test\/java\/examples\/users\/users[8:67] 18:38:39.699-18:38:40.104 Get add the track to playlist","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/examples\/users\/users[9:77]","start":1660741720105,"end":1660741720510,"title":"src\/test\/java\/examples\/users\/users[9:77] 18:38:40.105-18:38:40.510 Get Current User\u2019s Profile"},{"id":10,"group":1,"content":"src\/test\/java\/examples\/users\/users[10:85]","start":1660741720511,"end":1660741721338,"title":"src\/test\/java\/examples\/users\/users[10:85] 18:38:40.511-18:38:41.338 Get Current User\u2019s Profile"},{"id":11,"group":1,"content":"src\/test\/java\/examples\/users\/users[11:93]","start":1660741721339,"end":1660741722323,"title":"src\/test\/java\/examples\/users\/users[11:93] 18:38:41.339-18:38:42.323 Get Track\u2019s Audio Analysis"},{"id":12,"group":1,"content":"src\/test\/java\/examples\/users\/users[12:102]","start":1660741722324,"end":1660741722760,"title":"src\/test\/java\/examples\/users\/users[12:102] 18:38:42.324-18:38:42.760 Get Track\u2019s Audio Analysis"},{"id":13,"group":1,"content":"src\/test\/java\/examples\/users\/users[13:111]","start":1660741722777,"end":1660741723182,"title":"src\/test\/java\/examples\/users\/users[13:111] 18:38:42.777-18:38:43.182 Get Available Markets"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
