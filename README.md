@@ -102,10 +102,16 @@ As well as creating the basic pom.xml, IntelliJ IDEA has also created the defaul
 ### create the .feature files
 
 select the features file from src/test/java
+
 ![pic3](https://user-images.githubusercontent.com/111106737/185337756-91ba9ce6-5161-4f1f-a954-bf87afe147c0.png)
 
 create the scenario, using the dummy demo site.
 (https://reqres.in/api/users?page=2)
+
+### Test report
+Run the test scenarios and the get the report as a HTML format. copy the link and paste in the browser.
+
+![pic5](https://user-images.githubusercontent.com/111106737/185367316-94f03049-e86e-4c4b-90b2-11f4fd597acb.png).
 
 
 
