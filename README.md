@@ -16,25 +16,24 @@ We required the below tools to test the API using karate framework.
 ⁕ Karate Github
   → https://github.com/intuit/karate
 
-Dummy Demo site
+⁕ Dummy Demo site
   → https://reqres.in
+  → https://gorest.co.in/
 
 ## Running in IntelliJ
-If you use IntelliJ IDEA, download the plugins before starting the work
+If you use IntelliJ IDEA, download the plugins before starting the work.
 
-## Maven Dependency
-
-### Create the new project 
+## Create the new project 
 Let's create a brand new Maven project. From the Welcome Screen select New Project, or if you already have an IntelliJ IDEA project open, select File -> New -> Project... Select Maven from the options on the left, and choose the JDK for the project.
 
 ![pic1](https://user-images.githubusercontent.com/111106737/185327841-abc1f5a0-63b7-4ec9-8afd-4945d819f1c9.png)
 
 Press the ADD button and declare a group id, the artifact id and version.( refer the karatelabs official documentation for the version).
 
-
 ![pic2](https://user-images.githubusercontent.com/111106737/185332605-9a5fd41e-0292-40e9-9759-06d665382f61.png)
 
 
+## Maven Dependency
 
 As well as creating the basic pom.xml, IntelliJ IDEA has also created the default directory structure for a Maven project with the source and test folders defined.
 
@@ -99,16 +98,15 @@ As well as creating the basic pom.xml, IntelliJ IDEA has also created the defaul
 </project>
 
 
-### create the .feature files
-
-select the features file from src/test/java
+## create the .feature files
+Karate tool provides you with the step definitions. We just need to follow the Karate DSL syntax. To create a feature file, right click on the Project explorer, choose New >> File. Give a name to the feature file. Select the features file from src/test/java.
 
 ![pic3](https://user-images.githubusercontent.com/111106737/185337756-91ba9ce6-5161-4f1f-a954-bf87afe147c0.png)
 
 create the scenario, using the dummy demo site.
 (https://reqres.in/api/users?page=2)
 
-### Test report
+## Test report
 Run the test scenarios and the get the report as a HTML format. copy the link and paste in the browser.
 
 ![pic5](https://user-images.githubusercontent.com/111106737/185367316-94f03049-e86e-4c4b-90b2-11f4fd597acb.png).
