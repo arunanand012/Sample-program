@@ -135,11 +135,11 @@ However, I would suggest using these keywords in a reasonable order, because hav
 ### Karate Keywords
 These keywords are Karate keywords:
 
-url: Defines the base URL that Karate uses for the next web request.
-path: Specifies additional path fragments. The framework adds these fragments to your URL.
-def: Marks the start of a variable declaration.
-method: Sets the HTTP method that Karate uses to make request, and it marks point where Karate executes the web request.
-status: Represent a HTTP response code assertion. If the returned response code doesn’t match the specified one, Karate will mark this test as failed.
+* url: Defines the base URL that Karate uses for the next web request.
+* path: Specifies additional path fragments. The framework adds these fragments to your URL.
+* def: Marks the start of a variable declaration.
+* method: Sets the HTTP method that Karate uses to make request, and it marks point where Karate executes the web request.
+* status: Represent a HTTP response code assertion. If the returned response code doesn’t match the specified one, Karate will mark this test as failed.
 
 ## Test report
 Karate generates an HTML report that provides a more visual overview of the executed Features & Scenarios and that helps you in case your CI pipeline failed to track down the cause. The last message on the standard printed by karate is a quick link to that report:
