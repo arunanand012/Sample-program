@@ -150,11 +150,14 @@ Karate generates an HTML report that provides a more visual overview of the exec
 
 
 Reference links
-1) https://software-that-matters.com/2020/11/25/the-definitive-karate-api-testing-framework-getting-started-guide/
 
-2) https://devqa.io/karate-api-testing-tool-cheat-sheet/
+1) https://github.com/karatelabs/karate - official documentation
 
-3) https://priyankab85.medium.com/understanding-gherkin-keywords-and-karate-dsl-script-structure-2574c92e4e1b
+2) https://software-that-matters.com/2020/11/25/the-definitive-karate-api-testing-framework-getting-started-guide/
+
+3) https://devqa.io/karate-api-testing-tool-cheat-sheet/
+
+4) https://priyankab85.medium.com/understanding-gherkin-keywords-and-karate-dsl-script-structure-2574c92e4e1b
 
 
 
