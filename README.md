@@ -29,7 +29,7 @@ Let's create a brand new Maven project. From the Welcome Screen select New Proje
 
 ![pic1](https://user-images.githubusercontent.com/111106737/185327841-abc1f5a0-63b7-4ec9-8afd-4945d819f1c9.png)
 
-Press the #### ADD button and declare a group id, the artifact id and version.( refer the karatelabs official documentation for the version).
+Press the ADD button and declare a group id, the artifact id and version.( refer the karatelabs official documentation for the version).
 
 
 ![pic2](https://user-images.githubusercontent.com/111106737/185332605-9a5fd41e-0292-40e9-9759-06d665382f61.png)
