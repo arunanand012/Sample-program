@@ -149,6 +149,18 @@ Karate generates an HTML report that provides a more visual overview of the exec
 ![pic5](https://user-images.githubusercontent.com/111106737/185367316-94f03049-e86e-4c4b-90b2-11f4fd597acb.png).
 
 
+Reference links
+1) https://software-that-matters.com/2020/11/25/the-definitive-karate-api-testing-framework-getting-started-guide/
+
+2) https://devqa.io/karate-api-testing-tool-cheat-sheet/
+
+3) https://priyankab85.medium.com/understanding-gherkin-keywords-and-karate-dsl-script-structure-2574c92e4e1b
+
+
+
+
+
+
 
 
 
