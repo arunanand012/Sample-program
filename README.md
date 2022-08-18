@@ -1,6 +1,6 @@
 # API testing using the Karate Framework
 
-This sample project includes api testing with Karate
+This sample project includes api testing with Karate Framework
 
 ## Getting Started 
 We required the below tools to test the API using karate framework.
@@ -17,7 +17,7 @@ We required the below tools to test the API using karate framework.
   → https://github.com/intuit/karate
 
 Dummy Demo site
-  → http://dummy.restapiexample.com/
+  → https://reqres.in
 
 ## Running in IntelliJ
 If you use IntelliJ IDEA, download the plugins before starting the work
