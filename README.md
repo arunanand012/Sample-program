@@ -2,6 +2,9 @@
 
 This sample project includes api testing with Karate Framework
 
+## What is Karate Test Framework?
+Karate is an external domain-specific language based on Gherkin language to create API, Web UI, and Desktop UI tests. It was first published by Peter Thomas in early 2017, and it gained traction pretty fast. It was first mentioned on Thoughtworks Technology Radar in April 2019 as a language/framework to assess. In May 2020 it moved up to trial. It counts currently about ~4.2k GitHub stars. That’s quite an impressive career for a tool that’s round for about 4 years.
+
 ## Getting Started 
 We required the below tools to test the API using karate framework.
 
@@ -97,6 +100,10 @@ As well as creating the basic pom.xml, IntelliJ IDEA has also created the defaul
     
 </project>
 
+## karate-config.js
+This is where you can create variables which have a global scope. Karate reads this file before executing any scenario. This comes in very handy when switching environments which specific variables are used for different environments
+
+![pic6](https://user-images.githubusercontent.com/111106737/185389893-469b24f9-d142-46ed-8706-f65f6e907f22.png)
 
 ## create the .feature files
 Karate tool provides you with the step definitions. We just need to follow the Karate DSL syntax. To create a feature file, right click on the Project explorer, choose New >> File. Give a name to the feature file. Select the features file from src/test/java.
@@ -106,8 +113,36 @@ Karate tool provides you with the step definitions. We just need to follow the K
 create the scenario, using the dummy demo site.
 (https://reqres.in/api/users?page=2)
 
+### Gherkin Keywords
+The keyword Feature: defines a high-level description and groups the scenarios.
+
+Background: is used to define a code block that Karate executes every time before it runs a Scenario. This is analog to the setUp method of unit test.
+The Scenario keywords define the test case itself like your test methods in java and each feature file may contain one or more Scenarios.
+
+Gherkin defines the following keywords that define the start of a statement.
+
+* Given
+* When
+* Then
+* But
+* And
+* "*"
+
+  You can use these keywords to make your test more readable, but these keywords don’t affect how Karate executes the Scenario. They are completely interchangeable and you can use whatever you want. You just have to use one of these keywords to start a step definition, because it’s defined in the Gherkin syntax that way.
+
+However, I would suggest using these keywords in a reasonable order, because having “Given, When, Then” in the right order creates a much better reading experience than a wrong order or just *.
+
+### Karate Keywords
+These keywords are Karate keywords:
+
+url: Defines the base URL that Karate uses for the next web request.
+path: Specifies additional path fragments. The framework adds these fragments to your URL.
+def: Marks the start of a variable declaration.
+method: Sets the HTTP method that Karate uses to make request, and it marks point where Karate executes the web request.
+status: Represent a HTTP response code assertion. If the returned response code doesn’t match the specified one, Karate will mark this test as failed.
+
 ## Test report
-Run the test scenarios and the get the report as a HTML format. copy the link and paste in the browser.
+Karate generates an HTML report that provides a more visual overview of the executed Features & Scenarios and that helps you in case your CI pipeline failed to track down the cause. The last message on the standard printed by karate is a quick link to that report:
 
 ![pic5](https://user-images.githubusercontent.com/111106737/185367316-94f03049-e86e-4c4b-90b2-11f4fd597acb.png).
 
