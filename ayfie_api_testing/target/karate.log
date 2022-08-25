@@ -1,0 +1,305 @@
+12:45:54.199 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+12:45:54.683 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:45:54.777 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+12:45:56.527 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:45:57.402 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal.ayfie.com/api/health
+1 > Authorization:  Bearer ocucVfAvCNWFixHSOZJqBvKCjHDEwKFWjHYMWNLirZOSHiSVEL
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:46:00.261 [main] DEBUG com.intuit.karate - response time in milliseconds: 2828
+1 < 403
+1 < Date: Thu, 25 Aug 2022 07:15:59 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+12:46:00.292 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:7
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 2828, url: https://portal.ayfie.com/api/health, response: 
+
+src/test/java/examples/users/users.feature:7
+12:46:01.652 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+13:58:28.827 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+13:58:29.984 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:58:29.999 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661416109984
+13:58:30.249 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+13:58:34.593 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:58:34.671 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:3
+* def url = 'https://portal.ayfie.com/api/'
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/users.feature:3
+13:58:35.952 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+14:17:12.703 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:17:13.579 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:17:13.641 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661417233579
+14:17:18.172 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:17:18.235 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:3
+* def url = 'https://portal.ayfie.com/'
+'url' is a reserved name, also use the form '* url <expression>' instead
+src/test/java/examples/users/users.feature:3
+14:17:19.844 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+14:17:51.532 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:17:51.783 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:17:51.783 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661417271783
+14:17:52.658 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:17:52.830 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:3
+* url = 'https://portal.ayfie.com/'
+js failed:
+>>>>
+01: = 'https://portal.ayfie.com/'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+= 'https://portal.ayfie.com/'
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+src/test/java/examples/users/users.feature:3
+14:17:53.658 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+14:25:36.636 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+14:25:37.170 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:25:37.170 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661417737170
+14:25:39.591 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:25:39.716 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:3
+* url = 'https://portal.ayfie.com/'
+js failed:
+>>>>
+01: = 'https://portal.ayfie.com/'
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:0 Expected an operand but found =
+= 'https://portal.ayfie.com/'
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+src/test/java/examples/users/users.feature:3
+14:25:41.060 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+17:01:17.275 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:01:17.869 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:01:17.869 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661427077869
+17:01:18.009 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6
+17:01:20.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:01:21.525 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal.ayfie.com/api/health
+1 > content-type: application/json
+1 > Authorization: Bearer ocucVfAvCNWFixHSOZJqBvKCjHDEwKFWjHYMWNLirZOSHiSVEL
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:01:23.183 [main] DEBUG com.intuit.karate - response time in milliseconds: 1626
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:31:23 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:01:23.183 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:11
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 1626, url: https://portal.ayfie.com/api/health, response: 
+
+src/test/java/examples/users/users.feature:11
+17:01:24.542 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+17:24:27.861 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:24:28.533 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:24:28.533 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661428468533
+17:24:34.407 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:36.173 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal.ayfie.com/api/health
+1 > content-type: application/json
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:24:37.830 [main] DEBUG com.intuit.karate - response time in milliseconds: 1626
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:37 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:37.830 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:9
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 1626, url: https://portal.ayfie.com/api/health, response: 
+
+src/test/java/examples/users/users.feature:9
+17:24:37.846 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:38.033 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal.ayfie.com/api/lingo
+1 > content-type: application/json; charset=UTF-8
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Content-Length: 36
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"extractor":"auto","text":"string"}
+
+17:24:38.752 [main] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:38 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:38.752 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:18
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 719, url: https://portal.ayfie.com/api/lingo, response: 
+
+src/test/java/examples/users/users.feature:18
+17:24:38.767 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:38.783 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal.ayfie.com/api/keyword
+1 > content-type: application/json; charset=UTF-8
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Content-Length: 81
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"text":"string","top_n":5,"ngram_range":[1,1],"diversify":false,"diversity":0.7}
+
+17:24:39.486 [main] DEBUG com.intuit.karate - response time in milliseconds: 703
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:39 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:39.486 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:27
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 703, url: https://portal.ayfie.com/api/keyword, response: 
+
+src/test/java/examples/users/users.feature:27
+17:24:39.502 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:39.502 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal.ayfie.com/api/sentiments
+1 > content-type: application/json; charset=UTF-8
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Content-Length: 33
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"language":"en","text":"string"}
+
+17:24:40.189 [main] DEBUG com.intuit.karate - response time in milliseconds: 687
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:40 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:40.189 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:36
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 687, url: https://portal.ayfie.com/api/sentiments, response: 
+
+src/test/java/examples/users/users.feature:36
+17:24:40.189 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:40.205 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal.ayfie.com/api/summarize
+1 > content-type: application/json; charset=UTF-8
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Content-Length: 67
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"language":"auto","text":"string","min_length":5,"max_length":100}
+
+17:24:40.908 [main] DEBUG com.intuit.karate - response time in milliseconds: 703
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:40 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:40.908 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:45
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 703, url: https://portal.ayfie.com/api/summarize, response: 
+
+src/test/java/examples/users/users.feature:45
+17:24:40.923 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:24:40.923 [main] DEBUG com.intuit.karate - request:
+1 > POST https://portal.ayfie.com/api/translate
+1 > content-type: application/json; charset=UTF-8
+1 > Authorization: Bearer hucPWOJCCufJheFfZBigXRsZjtOhlhrJvleYvURVDRVmlpFKux
+1 > Content-Length: 33
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"language":"en","text":"string"}
+
+17:24:41.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 688
+1 < 403
+1 < Date: Thu, 25 Aug 2022 11:54:41 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:24:41.611 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:54
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 688, url: https://portal.ayfie.com/api/translate, response: 
+
+src/test/java/examples/users/users.feature:54
+17:24:43.220 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
+17:38:51.680 [main] INFO  com.intuit.karate - Karate version: 1.2.0
+17:38:52.508 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:38:52.524 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661429332508
+17:38:52.805 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 5
+17:38:54.695 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:38:55.742 [main] DEBUG com.intuit.karate - request:
+1 > GET https://portal.ayfie.com/api/health
+1 > content-type: application/json
+1 > Authorization: Bearer + API_X_KEY
+1 > Host: portal.ayfie.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:38:57.102 [main] DEBUG com.intuit.karate - response time in milliseconds: 1344
+1 < 403
+1 < Date: Thu, 25 Aug 2022 12:08:57 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: Kestrel
+
+
+17:38:57.102 [main] ERROR com.intuit.karate - src/test/java/examples/users/users.feature:10
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 1344, url: https://portal.ayfie.com/api/health, response: 
+
+src/test/java/examples/users/users.feature:10
+17:38:58.461 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/users.feature
