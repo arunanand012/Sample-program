@@ -1,6 +1,170 @@
 Feature: sample karate test script
 
-Scenario:
+  Scenario: Get Single Browse Category- SPO1- Pass the valid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO2- Pass the invalid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO3- Pass the valid one id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param category_id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO4- Pass the valid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO5- Pass the invalid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy, '}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get Single Browse Category- SPO6- Pass the valid id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/tracks'
+    Given param category_id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO8- Pass the valid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO9- Pass the invalid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SP10- Pass the valid one id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param category_id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO11- Pass the valid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SP12- Pass the invalid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy, '}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get Single Browse Category- SP13- Pass the valid id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/{id}/'
+    Given param category_id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SP15- Pass the valid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO16- Pass the invalid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO17- Pass the valid one id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param category_id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO18- Pass the valid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy', '4zCH9qm4R2DADamUHMCa6O'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SP19- Pass the invalid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy, '4zCHdvds9qm4R2DADamUHMCa6O '}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO20- Pass the valid id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path '/v1/albums/'
+    Given param category_id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Available Genre Seeds- SPO22-Pass the valid Oauth token
   Given url 'https://api.spotify.com/'
   Given path 'v1/recommendations/available-genre-seeds'
   Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
@@ -8,8 +172,16 @@ Scenario:
   Then status 200
   * print response
 
+  Scenario: Get Available Genre Seeds- SPO23-Pass the invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/recommendations/available-genre-seeds'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
 
-  Scenario: Get Several Browse Categories
+
+  Scenario: Get Several Browse Categories-SPO24-Pass the valid Oauth token
     Given url 'https://api.spotify.com/'
     Given path 'v1/browse/categories'
     Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
@@ -17,7 +189,15 @@ Scenario:
     Then status 200
     * print response
 
-  Scenario: Get Single Browse Category
+  Scenario: Get Several Browse Categories-SPO25-Pass the valid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO26- Pass the valid category id and Oauth token
     Given url 'https://api.spotify.com/'
     Given path 'v1/browse/categories/'
     Given param category_id = 'pop'
@@ -26,16 +206,146 @@ Scenario:
     Then status 200
     * print response
 
-  Scenario:Get Featured Playlists
+  Scenario: Get Single Browse Category- SPO27- Pass the invalid category id and Oauth token
     Given url 'https://api.spotify.com/'
-    Given path 'v1/browse/featured-playlists/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = 'songs'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO28- Pass the valid one category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = 'pop'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO29- Pass the valid two or more category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = {'pop , jazz'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Single Browse Category- SPO30- Pass the invalid two or more category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = {'songs , album'}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get Single Browse Category- SPO31- Pass the valid category id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = 'pop'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get Single Browse Category- SPO32- Pass the valid category id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/categories/'
+    Given param category_id = 'song'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario:Get category Playlists -SPO33- Pass the valid category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = 'pop'
     Given param country = 'IN'
     Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
     When method get
     Then status 200
     * print response
 
-  Scenario:Get Featured Playlists
+  Scenario: Get category Playlists -SPO34-  Pass the invalid category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = 'songs'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get category Playlists -SPO35-  Pass the valid one category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = 'pop'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get category Playlists -SPO36-  Pass the valid two or more category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = {'pop , jazz'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get category Playlists -SPO37-  Pass the invalid two or more category id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = {'songs , album'}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get category Playlists -SPO38-  Pass the valid category id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = 'pop'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario: Get category Playlists -SPO39 - Pass the valid category id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/browse/category-playlists/'
+    Given param category_id = 'song'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Featured Playlists- SPO40-Pass the valid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/recommendations/featured-playlists'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Featured Playlists- SPO41-Pass the invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/recommendations/featured-playlists'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario:Get the new released tracks
     Given url 'https://api.spotify.com/'
     Given path 'v1/browse/new-releases/'
     Given param country = 'IN'
@@ -44,17 +354,73 @@ Scenario:
     Then status 200
     * print response
 
-  Scenario:Get Several artists
+
+
+  Scenario: Get Several Artists- SPO76- Pass the valid id and invalid Oauth token
     Given url 'https://api.spotify.com/'
     Given path 'v1/artists/'
-    Given param ids = '4zCH9qm4R2DADamUHMCa6O'
+    Given param id = '4zCH9qm4R2DADamUHMCa6O'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Several Artists- SPO77- Pass the valid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param id = '4zCH9qm4R2DADamUHMCa6O'
     Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
     When method get
     Then status 200
     * print response
 
+  Scenario: Get Several Artists- SPO78- Pass the invalid id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param id = '789hhyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
 
-  Scenario:Get the track
+  Scenario: Get Several Artists- SPO79- Pass the valid one id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param category_id = '4aawyAB9vmqN3uQ7FjRGTy'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Several Artists- SPO80- Pass the valid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy', '4zCH9qm4R2DADamUHMCa6O'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Several Artists- SPO81- Pass the invalid two or more id and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param category_id = {'4aawyAB9vmqN3uQ7FjRGTy, '4zCHdvds9qm4R2DADamUHMCa6O '}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get Several Artists- SPO82- Pass the valid id and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/artists/'
+    Given param category_id = '4zCH9qm4R2DADamUHMCa6O'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+
+  Scenario:Get the track- SPO184- Pass the valid id param and Oauth token
     Given url 'https://api.spotify.com/'
     Given path 'v1/tracks/'
     Given param ids = '4zCH9qm4R2DADamUHMCa6O'
@@ -63,6 +429,50 @@ Scenario:
     Then status 200
     * print response
 
+  Scenario:Get the track- SPO185- Pass the invalid id param and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/tracks/'
+    Given param ids = '4zCH9qm4R2DADamUHMCa6O'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario:Get the track- SPO186- Pass the valid with one id param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/tracks/'
+    Given param ids = '4zCH9qm4R2DADamUHMCa6O'
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario:Get the track- SPO187-Pass the valid with two or more ids param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/tracks/'
+    Given param id = {'4aawyAB9vmqN3uQ7FjRGTy', '4zCH9qm4R2DADamUHMCa6O'}
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario:Get the track- SPO188- Pass the invalid with two or more ids param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/tracks/'
+    Given param id = {'4aawyAB9vmqN3uQ7FjRGTy, '4zCHdvds9qm4R2DADamUHMCa6O '}
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario:Get the track- SPO189- Pass the valid id param and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/tracks/'
+    Given param ids = '4zCH9qm4R2DADamUHMCa6O'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
 
   Scenario:Get add the track to playlist
     Given url 'https://api.spotify.com/'
@@ -74,7 +484,7 @@ Scenario:
     Then status 201
     * print response
 
-  Scenario: Get Current User’s Profile
+  Scenario: Get Current User’s Profile- SPO212- Pass the valid Oauth token
     Given url 'https://api.spotify.com/'
     Given path 'v1/me'
     Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
@@ -82,13 +492,68 @@ Scenario:
     Then status 200
     * print response
 
-  Scenario: Get Current User’s Profile
+  Scenario: Get Current User’s Profile- SPO213- Pass the invalid Oauth token
     Given url 'https://api.spotify.com/'
-    Given path 'v1/users/31hcqw3foaqexknn5wghgdytfh4a'
+    Given path 'v1/me'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get User’s Profile- SPO214-Pass the valid id param and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/'
+    Given param user_id = '31hcqw3foaqexknn5wghgdytfh4a'
+    Given header Authorization = 'Bearer JDJkkkdkjjhjjjjjskvdloHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get User’s Profile - SPO15- Pass the invalid id param and Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/'
+    Given param user_id = '3kldskgdfk1hcqw3foaqexknn5wghgdytfh4a'
     Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
     When method get
     Then status 200
     * print response
+
+  Scenario: Get User’s Profile - SPO16- Pass the valid with one id param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/'
+    Given param user_id = '31hcqw3foaqexknn5wghgdytfh4a '
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get User’s Profile - SPO17- Pass the valid with two or more ids param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/'
+    Given param user_id = '31hcqw3foaqexknn5wghgdytfh4a, 31hcmffdqw3foaqexknn5wghgdytfh4a '
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get User’s Profile - SPO18- Pass the invalid with two or more ids param
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/
+    Given param user_id = '31hcqw3foaqexknn5wghjkjkjgdytfh4a, 31hcmffdqw3foaqexknn5wghgdytfh4a '
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
+  Scenario: Get User’s Profile - SPO19- Pass the valid id param and invalid Oauth token
+    Given url 'https://api.spotify.com/'
+    Given path 'v1/users/'
+    Given param user_id = '31hcqw3foaqexknn5wghgdytfh4a '
+    Given header Authorization = 'Bearer BQDC0yrIOnors4oHK7Wr4UD79qQTsJoTtyZhuRf3PH1FOzdWFvBohU3WOjw5wU9X6piICGZsdF-tzG189o6G3WZSxIbgn0X8HLnor5zXFOhrw60WK5ysCCzEJx3-FVLpVasmJBXY_o0T7MVWwWX88nkAKbdLg5ObnMEzs08QGWF6kvtd0q_kdMXP6NG79ixScXIbfCQ3VPmkBEymeA3Hv979tV6hEDL0_mVsSlB6yeLGxJrvH2xNqpwTTdCptSY_yQszsh5SHpatZg'
+    When method get
+    Then status 200
+    * print response
+
 
   Scenario: Get Track’s Audio Analysis
     Given url 'https://api.spotify.com/'
@@ -99,7 +564,7 @@ Scenario:
     * print response
 
 
-  Scenario: Get Track’s Audio Analysis
+  Scenario: Get Track’s Audio features
     Given url 'https://api.spotify.com/'
     Given path 'v1/audio-features'
     Given param ids = '5jXrULyYKHjkAMk4TXZFoG'
@@ -202,8 +667,4 @@ Scenario:
     When method get
     Then status 200
     * print response
-
-
-
-
 
