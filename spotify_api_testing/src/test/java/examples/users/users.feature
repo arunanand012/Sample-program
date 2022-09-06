@@ -1,7 +1,5 @@
 Feature: sample karate test script
 
- Feature: sample karate test script
-
   Scenario: Get Album Tracks - SPO1- Pass the valid id and Oauth token
     Given url 'https://api.spotify.com/'
     Given path '/v1/albums/{id}/tracks'
